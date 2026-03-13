@@ -1,14 +1,14 @@
-# Deep Agent Template (Opinionated, JavaScript)
+# Deep Agent Template (Opinionated, TypeScript)
 
 Opinionated deployment template for a Deep Agent built with [`createDeepAgent(...)`](https://github.com/langchain-ai/deepagentsjs).
 
 ## What this template gives you
 
-- A deployable Deep Agent graph at `src/deep_agent/graph.js`.
+- A deployable Deep Agent graph at `src/agent.ts`.
 - Explicit workflow prompt (plan, delegate, critique, finalize).
 - Two predefined subagents (`researcher`, `critic`).
 - Human-in-the-loop interrupts on `execute` and `write_file`.
-- A Node.js workflow managed by `npm` with starter Vitest unit + integration suites.
+- A Node.js workflow managed by `npm` with Vitest unit + integration suites.
 
 ## Quickstart
 
@@ -30,21 +30,15 @@ cp .env.example .env
 npm run dev
 ```
 
-Optional `make` wrappers:
-
-```bash
-make dev
-make run
-```
-
 ## Scripts
 
 ```bash
-npm test                  # unit tests
-npm run test:integration  # integration tests (requires ANTHROPIC_API_KEY)
-npm run lint              # prettier --check
-npm run format            # prettier --write
-npm run build             # langgraphjs build
+npm test            # unit tests (src/**/*.test.ts, excludes .int.test.ts)
+npm run test:int    # integration tests (requires ANTHROPIC_API_KEY)
+npm run test:eval   # evaluation tests with LangSmith reporter
+npm run lint        # prettier --check
+npm run format      # prettier --write
+npm run build       # langgraphjs build
 ```
 
 Integration tests are skipped unless `ANTHROPIC_API_KEY` is set.

@@ -1,7 +1,7 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "agent": "./src/deep_agent/graph.js:graph"
+    "agent": "./src/agent.ts:graph"
   },
   "env": ".env",
   "image_distro": "wolfi"
