@@ -53,4 +53,4 @@ Integration tests are skipped unless `ANTHROPIC_API_KEY` is set.
 ## Reference docs
 
 - Deep Agents (JS): https://github.com/langchain-ai/deepagentsjs
-- LangGraph deployment in LangSmith: https://docs.langchain.com/oss/langchain/deploy
+- LangGraph deployment in LangSmith: https://docs.langchain.com/oss/javascript/langchain/deploy
