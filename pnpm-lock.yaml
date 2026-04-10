@@ -49,8 +49,8 @@ importers:
         specifier: ^2.6.1
         version: 2.6.1
       langsmith:
-        specifier: ^0.5.10
-        version: 0.5.10
+        specifier: ^0.5.18
+        version: 0.5.18
       prettier:
         specifier: ^3.2.5
         version: 3.8.1
@@ -1021,10 +1021,6 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
-  chalk@5.6.2:
-    resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-
   chokidar@4.0.3:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
@@ -1496,8 +1492,8 @@ packages:
       openai:
         optional: true
 
-  langsmith@0.5.10:
-    resolution: {integrity: sha512-unBdaaD/CqAOLIYjd9kT33FgHUMvHSsyBIPbQa+p/rE/Sv/l4pAC5ISEE79zphxi+vV4qxHqEgqahVXj2Xvz7A==}
+  langsmith@0.5.18:
+    resolution: {integrity: sha512-3zuZUWffTHQ+73EAwnodADtf534VNEZUpXr9jC12qyG8/IQuJET7PRsCpTb9wX2lmBspakwLUpqpj3tNm/0bVA==}
     peerDependencies:
       '@opentelemetry/api': '*'
       '@opentelemetry/exporter-trace-otlp-proto': '*'
@@ -1759,8 +1755,8 @@ packages:
     resolution: {integrity: sha512-RwFpb72c/BhQLEXIZ5K2e+AhgNVmIejGlTgiB9MzZ0e93GRvqZ7uSi0dvRF7/XIXDeNkra2fNHBxTyPDGySpjQ==}
     engines: {node: '>=8'}
 
-  p-queue@9.1.0:
-    resolution: {integrity: sha512-O/ZPaXuQV29uSLbxWBGGZO1mCQXV2BLIwUr59JUU9SoH76mnYvtms7aafH/isNSNGwuEfP6W/4xD0/TJXxrizw==}
+  p-queue@9.1.2:
+    resolution: {integrity: sha512-ktsDOALzTYTWWF1PbkNVg2rOt+HaOaMWJMUnt7T3qf5tvZ1L8dBW3tObzprBcXNMKkwj+yFSLqHso0x+UFcJXw==}
     engines: {node: '>=20'}
 
   p-retry@7.1.1:
@@ -2543,7 +2539,7 @@ snapshots:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.21
-      langsmith: 0.5.10
+      langsmith: 0.5.18
       mustache: 4.2.0
       p-queue: 6.6.2
       uuid: 11.1.0
@@ -2570,7 +2566,7 @@ snapshots:
       dotenv: 16.6.1
       exit-hook: 4.0.0
       hono: 4.12.12
-      langsmith: 0.5.10
+      langsmith: 0.5.18
       open: 10.2.0
       semver: 7.7.4
       stacktrace-parser: 0.1.11
@@ -2634,7 +2630,7 @@ snapshots:
   '@langchain/langgraph-sdk@1.7.2(@langchain/core@1.1.32)':
     dependencies:
       '@types/json-schema': 7.0.15
-      p-queue: 9.1.0
+      p-queue: 9.1.2
       p-retry: 7.1.1
       uuid: 13.0.0
     optionalDependencies:
@@ -3065,8 +3061,6 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-
-  chalk@5.6.2: {}
 
   chokidar@4.0.3:
     dependencies:
@@ -3546,7 +3540,7 @@ snapshots:
       '@langchain/core': 1.1.32
       '@langchain/langgraph': 1.2.2(@langchain/core@1.1.32)(zod@4.3.6)
       '@langchain/langgraph-checkpoint': 1.0.0(@langchain/core@1.1.32)
-      langsmith: 0.5.10
+      langsmith: 0.5.18
       uuid: 10.0.0
       zod: 4.3.6
     transitivePeerDependencies:
@@ -3567,7 +3561,7 @@ snapshots:
       '@langchain/core': 1.1.32
       '@langchain/langgraph': 1.2.2(@langchain/core@1.1.32)(zod@4.3.6)
       '@langchain/langgraph-checkpoint': 1.0.0(@langchain/core@1.1.32)
-      langsmith: 0.5.10
+      langsmith: 0.5.18
       uuid: 11.1.0
       zod: 4.3.6
     transitivePeerDependencies:
@@ -3592,13 +3586,9 @@ snapshots:
       semver: 7.7.4
       uuid: 10.0.0
 
-  langsmith@0.5.10:
+  langsmith@0.5.18:
     dependencies:
-      '@types/uuid': 10.0.0
-      chalk: 5.6.2
-      console-table-printer: 2.15.0
       p-queue: 6.6.2
-      semver: 7.7.4
       uuid: 10.0.0
 
   levn@0.4.1:
@@ -3804,7 +3794,7 @@ snapshots:
       eventemitter3: 4.0.7
       p-timeout: 3.2.0
 
-  p-queue@9.1.0:
+  p-queue@9.1.2:
     dependencies:
       eventemitter3: 5.0.4
       p-timeout: 7.0.1
