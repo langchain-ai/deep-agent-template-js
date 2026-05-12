@@ -49,8 +49,8 @@ importers:
         specifier: ^2.6.1
         version: 2.6.1
       langsmith:
-        specifier: ^0.5.19
-        version: 0.5.19
+        specifier: ^0.5.20
+        version: 0.5.20
       prettier:
         specifier: ^3.2.5
         version: 3.8.1
@@ -1344,8 +1344,8 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  hono@4.12.17:
-    resolution: {integrity: sha512-FbJJNb/XgX7YW0hX/V8w5oYLztKEsRLykCMZWt1WdLtsfjzMvmoqWBA4H4t5norinq8/rh20oiZYr+WSl4UzAQ==}
+  hono@4.12.18:
+    resolution: {integrity: sha512-RWzP96k/yv0PQfyXnWjs6zot20TqfpfsNXhOnev8d1InAxubW93L11/oNUc3tQqn2G0bSdAOBpX+2uDFHV7kdQ==}
     engines: {node: '>=16.9.0'}
 
   human-signals@8.0.1:
@@ -1492,8 +1492,8 @@ packages:
       openai:
         optional: true
 
-  langsmith@0.5.19:
-    resolution: {integrity: sha512-5tFoETuFMvGkbPGsINNlIE4Ab86CsPhdPOQZCGwNt/NX0h5NDKQLKOWS/G2XcRUBOQl4mCNbrayUvUTWaIRsCg==}
+  langsmith@0.5.20:
+    resolution: {integrity: sha512-ULhLM8RswvQDXufLtNtvclHrWCBx8Cb5UPI6lAZC+8Dq59iHsVPz/3Ac9khWNm1VIvChRsuykixD/WrmzuuA3Q==}
     peerDependencies:
       '@opentelemetry/api': '*'
       '@opentelemetry/exporter-trace-otlp-proto': '*'
@@ -2483,13 +2483,13 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@hono/node-server@1.19.13(hono@4.12.17)':
+  '@hono/node-server@1.19.13(hono@4.12.18)':
     dependencies:
-      hono: 4.12.17
+      hono: 4.12.18
 
-  '@hono/zod-validator@0.7.6(hono@4.12.17)(zod@4.3.6)':
+  '@hono/zod-validator@0.7.6(hono@4.12.18)(zod@4.3.6)':
     dependencies:
-      hono: 4.12.17
+      hono: 4.12.18
       zod: 4.3.6
 
   '@humanfs/core@0.19.1': {}
@@ -2540,7 +2540,7 @@ snapshots:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.21
-      langsmith: 0.5.19
+      langsmith: 0.5.20
       mustache: 4.2.0
       p-queue: 6.6.2
       uuid: 11.1.0
@@ -2555,8 +2555,8 @@ snapshots:
   '@langchain/langgraph-api@1.1.15(@langchain/core@1.1.32)(@langchain/langgraph-checkpoint@1.0.0(@langchain/core@1.1.32))(@langchain/langgraph@1.2.2(@langchain/core@1.1.32)(zod@4.3.6))(typescript@5.9.3)':
     dependencies:
       '@babel/code-frame': 7.29.0
-      '@hono/node-server': 1.19.13(hono@4.12.17)
-      '@hono/zod-validator': 0.7.6(hono@4.12.17)(zod@4.3.6)
+      '@hono/node-server': 1.19.13(hono@4.12.18)
+      '@hono/zod-validator': 0.7.6(hono@4.12.18)(zod@4.3.6)
       '@langchain/core': 1.1.32
       '@langchain/langgraph': 1.2.2(@langchain/core@1.1.32)(zod@4.3.6)
       '@langchain/langgraph-checkpoint': 1.0.0(@langchain/core@1.1.32)
@@ -2566,8 +2566,8 @@ snapshots:
       dedent: 1.7.2
       dotenv: 16.6.1
       exit-hook: 4.0.0
-      hono: 4.12.17
-      langsmith: 0.5.19
+      hono: 4.12.18
+      langsmith: 0.5.20
       open: 10.2.0
       semver: 7.7.4
       stacktrace-parser: 0.1.11
@@ -3454,7 +3454,7 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  hono@4.12.17: {}
+  hono@4.12.18: {}
 
   human-signals@8.0.1: {}
 
@@ -3541,7 +3541,7 @@ snapshots:
       '@langchain/core': 1.1.32
       '@langchain/langgraph': 1.2.2(@langchain/core@1.1.32)(zod@4.3.6)
       '@langchain/langgraph-checkpoint': 1.0.0(@langchain/core@1.1.32)
-      langsmith: 0.5.19
+      langsmith: 0.5.20
       uuid: 10.0.0
       zod: 4.3.6
     transitivePeerDependencies:
@@ -3562,7 +3562,7 @@ snapshots:
       '@langchain/core': 1.1.32
       '@langchain/langgraph': 1.2.2(@langchain/core@1.1.32)(zod@4.3.6)
       '@langchain/langgraph-checkpoint': 1.0.0(@langchain/core@1.1.32)
-      langsmith: 0.5.19
+      langsmith: 0.5.20
       uuid: 11.1.0
       zod: 4.3.6
     transitivePeerDependencies:
@@ -3587,7 +3587,7 @@ snapshots:
       semver: 7.7.4
       uuid: 10.0.0
 
-  langsmith@0.5.19:
+  langsmith@0.5.20:
     dependencies:
       p-queue: 6.6.2
       uuid: 10.0.0
