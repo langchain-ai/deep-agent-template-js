@@ -15,16 +15,13 @@
  */
 
 import { createDeepAgent, type SubAgent } from "deepagents";
-import { tool, context } from "langchain";
-import { ChatAnthropic } from "@langchain/anthropic";
+import { tool, context, todoListMiddleware } from "langchain";
 import * as z from "zod";
 
 /**
  * Default LLM used by the orchestrator and (optionally) sub-agents.
  */
-export const DEFAULT_MODEL = new ChatAnthropic({
-  model: "claude-sonnet-4-6",
-});
+export const DEFAULT_MODEL = "anthropic:claude-sonnet-4-6";
 
 /**
  * The orchestrator's system prompt.  It prescribes a strict five-step workflow
@@ -115,6 +112,7 @@ export const agent = createDeepAgent({
   tools: [utcNow, confidenceCheck],
   systemPrompt: SYSTEM_PROMPT,
   subagents: SUBAGENTS,
+  middleware: [todoListMiddleware()],
   interruptOn: {
     execute: true,
     write_file: true,
