@@ -13,5 +13,10 @@
 
 import { expect } from "vitest";
 import { langchainMatchers } from "langchain";
+import type { LangChainMatchers } from "@langchain/core/testing";
+
+declare module "vitest" {
+  interface Matchers<T = any> extends LangChainMatchers<T> {}
+}
 
 expect.extend(langchainMatchers);
