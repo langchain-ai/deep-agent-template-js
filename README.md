@@ -8,15 +8,19 @@ Opinionated deployment template for a Deep Agent built with [`createDeepAgent(..
 - Explicit workflow prompt (plan, delegate, critique, finalize).
 - Two predefined subagents (`researcher`, `critic`).
 - Human-in-the-loop interrupts on `execute` and `write_file`.
-- A Node.js workflow managed by `npm` with Vitest unit + integration suites.
+- A Node.js workflow managed by `pnpm` with Vitest unit + integration suites.
 
 ## Quickstart
 
 1. Install dependencies:
 
 ```bash
-npm install
+corepack enable
+pnpm install
 ```
+
+Use the pinned pnpm version so the security overrides in
+`pnpm-workspace.yaml` are applied.
 
 2. Configure environment:
 
@@ -27,18 +31,18 @@ cp .env.example .env
 3. Run locally:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## Scripts
 
 ```bash
-npm test            # unit tests (src/**/*.test.ts, excludes .int.test.ts)
-npm run test:int    # integration tests (requires ANTHROPIC_API_KEY)
-npm run test:eval   # evaluation tests with LangSmith reporter
-npm run lint        # prettier --check
-npm run format      # prettier --write
-npm run build       # langgraphjs build
+pnpm test            # unit tests (src/**/*.test.ts, excludes .int.test.ts)
+pnpm run test:int    # integration tests (requires ANTHROPIC_API_KEY)
+pnpm run test:eval   # evaluation tests with LangSmith reporter
+pnpm run lint        # prettier --check
+pnpm run format      # prettier --write
+pnpm run build       # langgraphjs build
 ```
 
 Integration tests are skipped unless `ANTHROPIC_API_KEY` is set.
