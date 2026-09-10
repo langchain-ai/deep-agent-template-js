@@ -19,11 +19,8 @@ corepack enable
 pnpm install
 ```
 
-Use the pinned pnpm version so the security overrides and patches in
-`pnpm-workspace.yaml` are applied. The `extract-zip@2.0.1` patch prevents writes
-through destination symlinks ([GHSA-7pqw-9j4j-h8q3](https://github.com/advisories/GHSA-7pqw-9j4j-h8q3));
-remove it once an upstream fixed release is available. Version-based scanners
-will still report this dependency until then.
+Use the pinned pnpm version so the security overrides in
+`pnpm-workspace.yaml` are applied.
 
 2. Configure environment:
 

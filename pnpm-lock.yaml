@@ -15,9 +15,6 @@ overrides:
   tar@<=7.5.15: 7.5.20
   uuid@<11.1.1: 11.1.1
 
-patchedDependencies:
-  extract-zip@2.0.1: c3083a13a6fa3da4b04b6803d975a7018bee944ac8e8d115c30cd77802c8c439
-
 importers:
 
   .:
@@ -2543,7 +2540,7 @@ snapshots:
       dotenv: 16.6.1
       execa: 9.6.1
       exit-hook: 4.0.0
-      extract-zip: 2.0.1(patch_hash=c3083a13a6fa3da4b04b6803d975a7018bee944ac8e8d115c30cd77802c8c439)(supports-color@7.2.0)
+      extract-zip: 2.0.1(supports-color@7.2.0)
       ignore: 7.0.6
       langsmith: 0.8.12(ws@8.21.3)
       open: 10.2.0
@@ -3002,7 +2999,7 @@ snapshots:
       '@commander-js/extra-typings': 13.1.0(commander@13.1.0)
       commander: 13.1.0
       dedent: 1.7.2
-      extract-zip: 2.0.1(patch_hash=c3083a13a6fa3da4b04b6803d975a7018bee944ac8e8d115c30cd77802c8c439)(supports-color@7.2.0)
+      extract-zip: 2.0.1(supports-color@7.2.0)
       picocolors: 1.1.1
     transitivePeerDependencies:
       - babel-plugin-macros
@@ -3231,7 +3228,7 @@ snapshots:
 
   expect-type@1.4.0: {}
 
-  extract-zip@2.0.1(patch_hash=c3083a13a6fa3da4b04b6803d975a7018bee944ac8e8d115c30cd77802c8c439)(supports-color@7.2.0):
+  extract-zip@2.0.1(supports-color@7.2.0):
     dependencies:
       debug: 4.4.3(supports-color@7.2.0)
       get-stream: 5.2.0
